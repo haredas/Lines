@@ -34,7 +34,7 @@ Lines.prototype = {
     /** @type {Number} Таймер для анимации */
     timer: null,
     /** @type {Number} Направления движения шариков */
-    directionCheck : [[-1, 0], [-1,-1], [0,-1]],
+    directionCheck : [[-1, 0], [-1,-1], [0,-1], [1,-1]],
     /** @type {Array} Доска */
     board: [],
     /** @type {Number} Размер ячейки */
