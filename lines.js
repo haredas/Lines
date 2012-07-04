@@ -143,7 +143,6 @@ Lines.prototype.moveSelectedBall = function(movedToX, movedToY) {
         this.timer = setInterval(function () {
             lines.animateMoveBall(selectedBall, path);
         }, 50);
-        console.log(this.timer);
     }
 };
 
@@ -377,7 +376,6 @@ Lines.prototype.drawNewBalls = function() {
     this.timer = setInterval(function () {
         lines.animateAddBalls();
     }, 50);
-    console.log(this.timer);
 };
 
 /**
@@ -387,7 +385,6 @@ Lines.prototype.drawNewBalls = function() {
 Lines.prototype.animateAddBalls = function() {
     var i;
     // Если колчество тактов анимации меньше 21
-    //console.log(this.countAnimateAddBalls);
     if (this.countAnimateAddBalls < 21) {
         this.isAnimate = true;
         // Для новых шариков увеличиваем радиус и перерисовываем
@@ -459,7 +456,6 @@ Lines.prototype.checkLines = function(x, y, type) {
             this.timer = setInterval(function () {
                 lines.animateDeleteBalls(mergeFindBalls);
             }, 50);
-            console.log(this.timer);
             break;
         }
         else {
